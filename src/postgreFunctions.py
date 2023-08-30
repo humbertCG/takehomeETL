@@ -20,9 +20,13 @@ handler = psycopg2.connect(database="postgres",
 def createTuple(customerData: dict):
      
      cursor = handler.cursor()
+
+     
+     #I decided to use the placeholder %s to prevent sql injection, %s is replaced by the actual data later on
      
      statement = 'INSERT INTO user_logins (user_id, device_type, masked_ip, masked_device_id, locale, app_version, create_date) VALUES (%s, %s, %s, %s, %s, %s, %s);'
 
+     #datetime.date.today() gets the current date to add it to the tuple
      data = (customerData['user_id'], customerData['device_type'], customerData['masked_ip'], customerData['masked_device_id'], customerData['locale'], 
              int(customerData['app_version']), datetime.date.today())
      

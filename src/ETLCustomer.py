@@ -11,8 +11,8 @@ def main():
 
     #If the program is run after the queue has been depleted or if there are no messages
     if sqf.get_approximate_number_of_messages()  == 0: 
-        print('No more messages waiting at the queue')
-        sys.exit()
+        print('No more messages waiting at the queue, please run the program when more messages are available')
+        sys.exit() #Close the program
 
     else:
         #Since sqs is limited to a max of 10 messages per request, requests must be sent continuously

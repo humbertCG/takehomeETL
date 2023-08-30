@@ -10,10 +10,17 @@ You can use the file explorer/finder and/or terminal of your system for relocati
 2. Open the terminal you can type command prompt on the search bar or if you are on windows, you can press (win key + r) then type cmd, (on Mac you can press command + space and then type terminal) and 
 finally hit enter. 
 
-3. Navigate (issuing commands or by copying and pasting the path of the directory into the terminal preceded by the cd command) to the location of the
+3. Before executing the program it is necessary to install the libraries that it requires to work appropiately. Navigate to the directory
+   (issuing commands or by copying and pasting the path of the directory into the terminal preceded by the cd command) to the directory that contains
+   the folders src, stubs, and dockerfiles; do not navigate into src yet! if you have installed python issue the following command to install the 
+   requirements file: 
+   
+   pip3 install -r requirements.txt
+
+4. Navigate (issuing commands or by copying and pasting the path of the directory into the terminal preceded by the cd command) to the location of the
 script, make sure that you are inside the src folder. 
 
-4. Execute the command python3 ETLCustomer.py
+5. Execute the command: python3 ETLCustomer.py
 
 
-5. Sit back and relax while tedious work is done automatically.
+6. Sit back and relax while tedious work is done automatically.
