@@ -12,7 +12,7 @@ After reading the documentation, remembering how to mask the PII, and deciding w
 
 <hr>
 
-## takehome questions and answers
+## Takehome questions and answers
 
 ● How would you deploy this application in production?
 
