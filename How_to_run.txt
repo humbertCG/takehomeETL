@@ -1,0 +1,18 @@
+To run the code, you must install the latest version from python3 from https://www.python.org/downloads/
+
+Once you are done with the installing process you are ready to execute the program, all you need to do is follow these steps:
+
+Prerequisite: Check that the instances of postgreSQL and SQS are running locally this can be done by reveiwing the instruction of Data Takehome Test (This assignment)
+
+
+1. Make sure that the directory that contains all the files is in a place that can be accesed easily through the cmd e.g C:\Users\YourUserName\scriptDirectory. You can use the file explorer/finder and/or terminal of your system for relocating the file.
+
+2. Open the terminal you can type command prompt on the search bar or if you are on windows, you can press (win key + r) then type cmd, (on Mac you can press command + space and then type terminal) and finally hit enter. 
+
+3. Navigate (issuing commands or by copying and pasting the path of the directory into the terminal preceded by the cd command) to the location of the
+script, make sure that you are inside the src folder. 
+
+4. Execute the command python3 ETLCustomer.py
+
+
+5. Sit back and relax while tedious work is done automatically.
