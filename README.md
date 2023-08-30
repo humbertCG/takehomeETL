@@ -11,10 +11,12 @@ Out of the whole process, the most entertaining part for me was thinking about h
 After reading the documentation, remembering how to mask the PII, and deciding which approach to use, coding was straightforward. I tried to make my code as robust as possible however, due to time constraints I could only make tests on the fly with the provided dataset; I would have really liked being able to make tests with other datasets and having the opportunity to develop more robust unit tests nevertheless, I think that the solution works really well and I had a lot of fun while programming it.
 
 <hr>
-## Questions 
+
+## takehome questions and answers
 
 ● How would you deploy this application in production?
-  I would use an EC2 instance to deploy this application in a production environment and to also deploy the postgreSQL server, in the future this EC2 could be notified by a webhook whenever new messages are received in SQS and automatically insert them into the db. While deploying it I would use a Devops methodology to overcome challenges like slow delivery and lack of communication between development and 
+
+I would use an EC2 instance to deploy this application in a production environment and to also deploy the postgreSQL server, in the future this EC2 could be notified by a webhook whenever new messages are received in SQS and automatically insert them into the db. While deploying it I would use a Devops methodology to overcome challenges like slow delivery and lack of communication between development and 
 operation teams. Regarding security I would create environment variables for all sensible info before deploying. 
   
 ● What other components would you want to add to make this production ready?
