@@ -1,13 +1,17 @@
 # takehomeETL
 Humberto Carrillo's submission for the FETCH Takehome
+29/8/2023
 
-##Thought process Description## 
+<hr>
+
+## Thought process Description 
 
 For this takehome, I decided to use the python programming language because it makes it easy to interact with databases, it also saved me a lot of time with its boto3 library for connecting to sqs. I already knew how to interact with PostgreSQL databases and had knowledge about sqs however, I had never tried to connect to sqs using python, therefore I read the documentation and became familiar with the boto3 library which is the official library provided by Amazon to interact with sqs. After reading the documentation almost all the initial questions about how I would program the solution for the take-home disappeared, some of these questions were: how many messages can I retrieve from sqs at the same time? What are the credentials needed for logging in? How will the retrieved messages be structured? Before starting to code I thought about using an object-oriented approach however, since the only relevant objects here were messages, (excluding connection handlers for postgreSQL) I decided to focus more on using a mixture of functional and declarative programming. 
 Out of the whole process, the most entertaining part for me was thinking about how to mask the PII. Out of the blue I remembered my cybersecurity classes in college and hashes came to mind because one rule of hashing algorithms is that the same input always yields the same output. 
 After reading the documentation, remembering how to mask the PII, and deciding which approach to use, coding was straightforward. I tried to make my code as robust as possible however, due to time constraints I could only make tests on the fly with the provided dataset; I would have really liked being able to make tests with other datasets and having the opportunity to develop more robust unit tests nevertheless, I think that the solution works really well and I had a lot of fun while programming it.
 
-##Questions 
+<hr>
+## Questions 
 
 ● How would you deploy this application in production?
   I would use an EC2 instance to deploy this application in a production environment and to also deploy the postgreSQL server, in the future this EC2 could be notified by a webhook whenever new messages are received in SQS and automatically insert them into the db. While deploying it I would use a Devops methodology to overcome challenges like slow delivery and lack of communication between development and 
